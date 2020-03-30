@@ -115,19 +115,25 @@ $pwError2 ="";
 
               <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                  <li><a href="index.html" class="nav-link">Home</a></li>
+                  <li><a href="index.php" class="nav-link">Home</a></li>
                   <li><a href="#" class="nav-link">Agents</a></li>
                   <li><a href="#" class="nav-link">Property</a></li>
                   <li><a href="#" class="nav-link">About</a></li>
                   
-                  <?php if(isset($_SESSION['ime'])){ ?>
-                      <li><a style="color:#90bede!important" class="submit-property" href="submit-property.php">Submit Property</a></li>
-                      <?php } ?>
-                  <?php if(isset($_SESSION['ime'])){ ?>
-                      <li><a style="color:black!important" href="logout.php" class="nav-link login">Logout</a></li>
-                      <?php }else{?>
-                      <li><a style="color:black!important" href="login.php" class="nav-link login">Login</a></li>
-                      <?php  }?>
+                  <?php if(isset($_SESSION['ime'])){?>
+                  <div style="border-radius:10px;" class="btn-group">
+                  <button style="background-color:#191919;border:black;" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <?php echo $_SESSION['ime'];?>
+                  </button>
+                  <div style="background-color: black;" class="dropdown-menu dropdown-menu-right">
+                    <button class="dropdown-item" type="button"><a href="profile.php?id="<?php echo $_SESSION['id'];?>>View your profile</a></button>
+                    <button class="dropdown-item" type="button"><a href="submit-property.php">Submit property</a></button>
+                    <button class="dropdown-item" type="button"><a href="logout.php">Logout</a></button>
+                  </div>
+                    </div>
+                    <?php }else{?>
+                    <li><a style="color:black!important" href="login.php" class="nav-link login">Login</a></li>
+                    <?php }?>
                 </ul>
               </nav>
             </div>
@@ -139,7 +145,7 @@ $pwError2 ="";
       </header>
 
     <div class="ftco-blocks-cover-1">
-      <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg')">
+      <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url('images/hero_6.jpg')">
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-7">

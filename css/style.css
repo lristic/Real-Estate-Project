@@ -1911,3 +1911,7 @@ a:hover {
     border: 1px solid #c02739;
 }
 
+.dropdown-item:hover {
+    background-color: #000;
+    
+}

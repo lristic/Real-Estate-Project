@@ -143,14 +143,20 @@
                   <li><a href="#" class="nav-link">Agents</a></li>
                   <li class="active"><a href="property.html" class="nav-link">Property</a></li>
                   <li><a href="#" class="nav-link">About</a></li>
-                  <?php if(isset($_SESSION['ime'])){ ?>
-                      <li><a style="color:#90bede!important" class="submit-property" href="submit-property.php">Submit Property</a></li>
-                      <?php } ?>
-                  <?php if(isset($_SESSION['ime'])){ ?>
-                      <li><a style="color:black!important" href="logout.php" class="nav-link login">Logout</a></li>
-                      <?php }else{?>
-                      <li><a style="color:black!important" href="login.php" class="nav-link login">Login</a></li>
-                      <?php  }?>
+                  <?php if(isset($_SESSION['ime'])){?>
+                  <div style="border-radius:10px;" class="btn-group">
+                  <button style="background-color:#191919;border:black;" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <?php echo $_SESSION['ime'];?>
+                  </button>
+                  <div style="background-color: black;" class="dropdown-menu dropdown-menu-right">
+                    <button class="dropdown-item" type="button"><a href="profile.php?id="<?php echo $_SESSION['id'];?>>View your profile</a></button>
+                    <button class="dropdown-item" type="button"><a href="submit-property.php">Submit property</a></button>
+                    <button class="dropdown-item" type="button"><a href="logout.php">Logout</a></button>
+                  </div>
+                    </div>
+                    <?php }else{?>
+                    <li><a style="color:black!important" href="login.php" class="nav-link login">Login</a></li>
+                    <?php }?>
                 </ul>
               </nav>
             </div>

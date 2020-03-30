@@ -750,7 +750,7 @@
                  <input type="submit" name="submit" style="height: 55px;" class="btn btn-black py-3 btn-block login-btn" value="Submit">
                </div>
                <div class="col-md-12 mt-2">
-                   <b style="font-size: 12px;">Already have a property?</b><a style="color:black!important;font-size: 12px;" href="#"> Update here</a>
+                   <b style="font-size: 12px;">Already have a property?</b><a style="color:black!important;font-size: 12px;" href="profile.php"> Update here</a>
                 </div>
              </div>
              

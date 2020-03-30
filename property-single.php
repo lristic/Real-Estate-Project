@@ -219,6 +219,7 @@
     </div>
 
     
+    <?php if($stmt_ostalo->rowCount() > 0){?>
     <div class="site-section bg-black">
      
       <div class="container">
@@ -236,7 +237,6 @@
         
         <div class="row">
         <?php 
-                if($stmt_ostalo->rowCount() > 0){
                     foreach($res_ostalo as $row_ostalo){ ?>
           <div class="col-md-4 mb-5">
                

@@ -1,4 +1,5 @@
 # Real-Estate-Project
 
 A Real Estate Project created using PHP and MySQL. <br>
-The project can be viewed here: [Real-Estate-Project](http://razvoj.diginout.com/laki/restate/)
+Front-end part was realised using a template, the back-end part is all me.
+The project can be viewed here: [Real-Estate-Project](https://lristic.github.io/01/Real-Estate)
